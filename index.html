@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NukaWorks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="https://status.nuka.works/">Status</a></li>
+                <li><a href="https://git.nuka.works/NukaWorks">NukaWorks Git</a></li>
+                <li><a href="https://discord.gg/zMDEH5ff8P">Discord</a></li>
+            </ul>
+        </nav>
+        <div class="logo" id="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('navbar');
+            const logo = document.getElementById('logo');
+
+            navbar.classList.add('active');
+            setTimeout(() => {
+                logo.classList.add('active');
+            }, 500); 
+        });
+    </script>
+</body>
+</html>
